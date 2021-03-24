@@ -16,10 +16,10 @@ public class Main {
 			
 			// Validate the arguments, sourcefile name
 			EventValidator eventValidator = new EventValidatorImpl(args);
-		    eventValidator.validate();
-		    		
-		    final String sourceFilename = args[0];
-		    PersonFileReader personFileReader = new PersonFileReader(sourceFilename);
+			eventValidator.validate();
+					
+			final String sourceFilename = args[0];
+			PersonFileReader personFileReader = new PersonFileReader(sourceFilename);
 			List<Person> filteredLines = personFileReader.readFile();
 			
 			PersonFileWriter personFilerWriter = new PersonFileWriter(filteredLines, sourceFilename);
