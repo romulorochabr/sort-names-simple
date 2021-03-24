@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.megaport</groupId>
+  <artifactId>sort-names</artifactId>
+  <version>1.0.0</version>
+  <name>sort-names</name>
+  <description>Application to sort list of person based on Last and First names. </description>
+  
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+
+<build>
+ <plugins>
+     <plugin> 
+
+                <!-- Building an executable jar -->
+
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+
+                    <!-- give full qualified name of your main class-->
+                      <mainClass>com.megaport.sorter.main.Main</mainClass>
+
+                    </manifest>
+                  </archive>
+                </configuration>
+    </plugin>
+ </plugins>
+</build>
+
+</project>
